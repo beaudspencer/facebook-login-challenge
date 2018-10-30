@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ReactiveFormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,6 @@ import { ReactiveFormsModule }   from '@angular/forms';
     HomePage
   ],
   imports: [
-    ReactiveFormsModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
