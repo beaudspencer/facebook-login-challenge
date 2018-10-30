@@ -1,1 +1,24 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<h1 ion-text color="primary">Login to FaceBook</h1>
+<form [formGroup]="login">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="email"
+      required
+      formControlName="email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      required
+      formControlName="password"
+    />
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
